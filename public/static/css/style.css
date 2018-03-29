@@ -22,6 +22,9 @@
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
+#content {
+    background: #fff;
+}
 .isotope-item {
     z-index: 2;
 }
@@ -49,11 +52,14 @@
 /* =  Header
 /*-------------------------------------------------*/
 
+.navbar.navbar-default.navbar-fixed-top {    
+    
+}
 
 .navbar {
 	margin-bottom: 0;
     background: #fff;
-    box-shadow: none;
+    box-shadow: none;    
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -o-box-shadow: none;
@@ -78,6 +84,7 @@ header.active .navbar {
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
     -o-transition: all 0.17s ease-in-out;
+    display:none;
 }
 
 header.active .top-line {
@@ -145,8 +152,13 @@ ul.social-icons li a:hover {
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
-    -o-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;    
 }
+
+.navbar-brand img{
+    height: 70px;    
+}
+
 
 header.active .navbar-brand {
     padding: 10px 15px 0;
@@ -167,14 +179,16 @@ header.active .navbar-brand {
 }
 
 .navbar-default .navbar-nav > li.drop:after {
-    position: absolute;
-    content: '\f107';
+    position: absolute;    
     font-family: 'FontAwesome';
-    color: #cecece;
+    color: #000;
     font-size: 13px;
     right: 0px;
     top: 50%;
     margin-top: -7px;
+}
+.footer-line {
+    background: #000;
 }
 
 .navbar-default .navbar-nav > li:first-child {
@@ -183,7 +197,7 @@ header.active .navbar-brand {
 
 .navbar-default .navbar-nav > li > a {
     position: relative;
-    color: #7d7d7d;
+    color: #000;
     font-size: 16px;
     font-family:Î¢ÈíÑÅºÚ;
     font-weight: 900;
@@ -207,7 +221,7 @@ header.active .navbar-brand {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #0077f9;
+    color: #999;
 }
 
 header.active .navbar-nav > li > a {
@@ -216,7 +230,7 @@ header.active .navbar-nav > li > a {
 
 ul.drop-down {
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 0;
     width: 150px;
     visibility: hidden\0/;
@@ -264,16 +278,16 @@ ul.drop-down {
 
 ul.drop-down li a {
     display: block;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     font-family:Î¢ÈíÑÅºÚ;
     padding: 10px 12px;
     text-decoration: none;
     text-transform: capitalize;
-    background: #0076f9;
+    background: #fff;
     font-weight: 300;
     opacity: 1;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid #000;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
@@ -483,7 +497,7 @@ body {
 
 .welcome-box h1 span {
     font-weight: 600;
-    color: #0076f9;
+    color: #000;
 }
 
 .welcome-box p {
@@ -519,7 +533,7 @@ body {
     float: left;
     width: 66px;
     height: 66px;
-    background: #0076f9;
+    background: #000;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -540,7 +554,7 @@ body {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
     left: 0px;
     top: 0px;
     transition: all 0.17s ease-in-out;
@@ -565,7 +579,7 @@ body {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 3px solid #0076f9;
+    border: 3px solid #000;
     left: -7px;
     top: -7px;
     transition: all 0.17s ease-in-out;
@@ -894,15 +908,15 @@ body {
 }
 
 .owl-theme .owl-controls .owl-buttons div:hover {
-    border: 1px solid #0076f9;
-    background: #0076f9;
+    border: 1px solid #000;
+    background: #000;
 }
 
 .owl-theme .owl-controls .owl-buttons div:before {
     font-family: 'FontAwesome';
     position: absolute;
     font-size: 32px;
-    color: #0076f9;
+    color: #000;
     width: 100%;
     left: 0;
     text-align: center;
@@ -963,6 +977,7 @@ body {
 
 .latest-post {
     border-bottom: 1px solid #dedede;
+    display: none;
 }
 
 .news-item h5 {
@@ -981,8 +996,8 @@ a.read-more {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -o-border-radius: 4px;
-    border: 1px solid #0076f9;
-    color: #0076f9;
+    border: 1px solid #000;
+    color: #000;
     padding: 8px 12px;
     background: #fff;
     font-size: 12px;
@@ -996,7 +1011,7 @@ a.read-more {
 }
 
 a.read-more i {
-    color: #0076f9;
+    color: #000;
     font-size: 12px;
     margin-left: 7px;
     transition: all 0.17s ease-in-out;
@@ -1031,7 +1046,7 @@ a.read-more:hover i {
     padding: 10px;
     margin-left: -100%;
     text-decoration: none;
-    background: #117bf1
+    background: #999
 }
 
 .hover-item ul li a i {
@@ -1078,7 +1093,7 @@ a.read-more:hover i {
 }
 
 .why-convertible-box h1 i {
-    color: #0076f9;
+    color: #000;
     margin-left: 10px;
 }
 
@@ -1087,7 +1102,7 @@ a.read-more:hover i {
 }
 
 .why-convertible-box p a {
-    color: #0076f9;
+    color: #000;
     font-weight: 700;
 }
 
@@ -1099,14 +1114,14 @@ a.read-more:hover i {
 
 .tag-list li a {
     display: inline-block;
-    color: #0076f9;
+    color: #000;
     font-size: 12px;
     font-family:Î¢ÈíÑÅºÚ;
     border-radius: 9px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     -o-border-radius: 9px;
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
     padding: 5px 10px;
     background: #fff;
     text-decoration: none;
@@ -1117,7 +1132,7 @@ a.read-more:hover i {
 }
 
 .tag-list li a i {
-    color: #0076f9;
+    color: #000;
     font-size: 17px;
     margin-right: 4px;
     vertical-align: middle;
@@ -1143,6 +1158,12 @@ a.read-more:hover i {
     background: url('../images/border-bottom.png.html') center center no-repeat;
 }
 
+.up-footer {
+    display: none;
+}
+.yqlj {
+    display: none;
+}
 ul.device-list {
     overflow: hidden;
     margin-bottom: 45px;
@@ -1167,7 +1188,7 @@ ul.device-list li:after {
     position: absolute;
     top: 70px;
     left: -38px;
-    color: #0076f9;
+    color: #000;
     font-size: 18px;
 }
 
@@ -1189,7 +1210,8 @@ ul.device-list li.device4 {
 
 .testimonials-box {
     padding: 50px 0;
-    background: url('../images/banner2.jpg');
+    /*background: url('../images/banner2.jpg');*/
+    background: #666;
 }
 
 .testimonials-box h3 {
@@ -1268,7 +1290,7 @@ ul.device-list li.device4 {
 }
 
 .staff-post-content {
-    background: #0076f9;
+    background: #000;
     padding: 20px 23px;
     border-top-right-radius: 4px;
     -webkit-border-top-right-radius: 4px;
@@ -1343,7 +1365,7 @@ ul.device-list li.device4 {
     display: inline-block;
     width: 29px;
     height: 29px;
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
     background: #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1358,7 +1380,7 @@ ul.device-list li.device4 {
 .staf-social li a i {
     font-size: 13px;
     text-align: center;
-    color: #0076f9;
+    color: #000;
     line-height: 29px;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -1371,7 +1393,7 @@ ul.device-list li.device4 {
 }
 
 .staf-social li a:hover {
-    background: #0076f9;
+    background: #000;
 }
 
 .infographic-box {
@@ -1416,7 +1438,7 @@ ul.device-list li.device4 {
 }
 
 .gender-list li a i.fa-male {
-    color: #0076f9;
+    color: #000;
 }
 
 .gender-list li a i.fa-female {
@@ -1436,7 +1458,7 @@ ul.device-list li.device4 {
 
 .stars-list li a i {
     font-size: 50px;
-    color: #0076f9;
+    color: #000;
 }
 
 .stars-list li:nth-child(n+11) a i {
@@ -1480,7 +1502,7 @@ ul.device-list li.device4 {
     display: inline-block;
     color: #fff;
     padding: 11px 14px;
-    background: #0076f9;
+    background: #000;
     font-size: 15px;
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 700;
@@ -1539,7 +1561,7 @@ ul.product-list li a {
 }
 
 ul.product-list li a:hover {
-    background: #0076f9;
+    background: #000;
 }
 
 ul.product-list li a i {
@@ -1791,13 +1813,15 @@ ul.tab-links li a:hover i {
 
 .page-banner {
     padding: 22px 0;
-    background: url('../images/banner1.jpg');
+    /*background: url('../images/banner1.jpg');*/
+    
     overflow: hidden;
     margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
 }
 
 .page-banner h2 {
-    color: #fff;
+    color: #000;    
     font-size: 26px;
     font-weight: 300;
     line-height: 42px;
@@ -1812,7 +1836,7 @@ ul.page-tree {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    -o-border-radius: 10px;
+    -o-border-radius: 10px;    
 }
 
 ul.page-tree li {
@@ -1824,7 +1848,7 @@ ul.page-tree li {
 ul.page-tree li:before {
     font-family: 'FontAwesome';
     content: '\f0a9';
-    color: #fff;
+    color: #000;
     font-size: 14px;
     position: absolute;
     top: 0;
@@ -1841,7 +1865,7 @@ ul.page-tree li:first-child:before {
 
 ul.page-tree li a {
     display: inline-block;
-    color: #fff;
+    color: #000;
     font-size: 13px;
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 300;
@@ -1865,7 +1889,7 @@ ul.filter li {
 ul.filter li a {
     position: relative;
     display: inline-block;
-    color: #7e7e7e;
+    color: #000;
     font-size: 15px;
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 300;
@@ -1882,7 +1906,7 @@ ul.filter li a {
 ul.filter li a.active,
 ul.filter li a:hover {
     color: #fff;
-    background: #0076f9;
+    background: #000;
 }
 
 ul.filter li a.active:after,
@@ -1893,7 +1917,7 @@ ul.filter li a:hover:after {
     left: -1px;
     bottom: -1px;
     right: -1px;
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
     z-index: 2;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -1902,7 +1926,7 @@ ul.filter li a:hover:after {
 }
 
 ul.filter li a i {
-    color: #7e7e7e;
+    color: #fff;
     font-size: 17px;
     margin-right: 10px;
     vertical-align: middle;
@@ -1942,7 +1966,7 @@ ul.protype li a {
 ul.protype li a.active,
 ul.protype li a:hover {
     color: #fff;
-    background: #0076f9;
+    background: #000;
 }
 
 ul.protype li a.active:after,
@@ -1953,7 +1977,7 @@ ul.protype  li a:hover:after {
     left: -1px;
     bottom: -1px;
     right: -1px;
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
     z-index: 2;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -2307,7 +2331,7 @@ ul.contact-information-list li i {
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 700;
     padding: 13px 20px;
-    background: #0076f9;
+    background: #000;
     text-transform: uppercase;
     border: none;
     transition: all 0.2s ease-in-out;
@@ -2415,7 +2439,7 @@ ul.contact-information-list li i {
     color: #ffffff;
     font-size: 11px;
     font-family: Î¢ÈíÑÅºÚ;
-    background: #0076f9;
+    background: #000;
     text-decoration: none;
     padding: 3px 8px;
     border-radius: 5px;
@@ -2477,7 +2501,7 @@ ul.depth {
 .about-us-text p span,
 .company-mission p span {
     font-weight: 700;
-    color: #0076f9;
+    color: #000;
 }
 
 .skills-progress p {
@@ -2488,7 +2512,7 @@ ul.depth {
 
 .skills-progress p span {
     display: inline-block;
-    color: #0076f9;
+    color: #000;
     float: right;
     font-weight: 400;
 }
@@ -2506,14 +2530,14 @@ ul.depth {
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: #0076f9;
+    background: #000;
 }
 
 .company-mission > span.icon {
     display: block;
     width: 62px;
     height: 62px;
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
     background: #fff;
     float: left;
     margin-right: 20px;
@@ -2528,7 +2552,7 @@ ul.depth {
 .company-mission > span.icon:after {
     position: absolute;
     content: 'O';
-    color: #0076f9;
+    color: #000;
     font-size: 43px;
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 600;
@@ -2537,7 +2561,7 @@ ul.depth {
 }
 
 .staff-box.vers2 .staff-post-gal {
-    border: 1px solid #0076f9;
+    border: 1px solid #000;
 }
 
 .pricing-box {
@@ -2571,7 +2595,7 @@ ul.pricing-table li {
 ul.pricing-table li:first-child {
     padding: 35px 0;
     border: none;
-    background: #0076f9;
+    background: #000;
 }
 
 ul.pricing-table li p {
@@ -2602,7 +2626,7 @@ ul.pricing-table li a {
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 700;
     padding: 12px 20px;
-    background: #0076f9;
+    background: #000;
     text-decoration: none;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -2621,7 +2645,7 @@ ul.pricing-table li a:hover {
 .pricing-table.standard li {
     border: none;
     border-bottom: 1px solid #005ec7;
-    background: #0076f9;
+    background: #000;
 }
 
 .pricing-table.standard li:first-child {
@@ -2639,12 +2663,12 @@ ul.pricing-table li a:hover {
 
 .pricing-table.standard li:first-child p,
 .pricing-table.standard li:first-child span {
-    color: #0076f9;
+    color: #000;
 }
 
 .pricing-table.standard li a {
     background: #ffffff;
-    color: #0076f9;
+    color: #000;
 }
 
 .clients-section {
@@ -2729,7 +2753,7 @@ ul.pricing-table li a:hover {
    width: 30px;
    height: 30px;
    text-align: center;
-   background: #0076f9;
+   background: #000;
 }
 
 .top-bar .right-block i {
@@ -2758,7 +2782,7 @@ ul.pricing-table li a:hover {
     text-transform: uppercase;
     font-weight: 700;
     padding: 10px 14px;
-    background: #0076f9;
+    background: #000;
 }
 
 .category-shop-list > li {
@@ -2787,7 +2811,7 @@ ul.pricing-table li a:hover {
 .category-shop-list li a.accordion-link:hover,
 .category-shop-list li a.accordion-link.active {
     color: #fff;
-    background: #0076f9;
+    background: #000;
     opacity: 0.6;
 }
 
@@ -2886,11 +2910,11 @@ ul.popular-product li h6 a {
 }
 
 ul.popular-product li h6 a:hover {
-    color: #0076f9;
+    color: #000;
 }
 
 ul.popular-product li span {
-    color: #0076f9;
+    color: #000;
     font-size: 15px;
     font-family: Î¢ÈíÑÅºÚ;
     font-weight: 700;
@@ -3252,7 +3276,7 @@ p.work-time span {
 
 .footer-line {
     padding: 10px;
-    background: #007aff;
+    background: #000;
     overflow: hidden;
 }
 
@@ -3264,7 +3288,8 @@ p.work-time span {
 }
 
 .footer-line a.go-top {
-    display: inline-block;
+
+    display: none;
     position: relative;
     float: right;
     width: 42px;
@@ -3290,7 +3315,7 @@ p.work-time span {
     position: absolute;
     font-size: 28px;
     width: 100%;
-    color: #007aff;
+    color: #000;
     vertical-align: middle;
     text-align: center;
 }
@@ -3346,7 +3371,7 @@ p.work-time span {
     bottom: 0;
     z-index: 0;
     border-radius: inherit;
-    background: #0076f9;
+    background: #000;
 }
 .noUi-origin-upper {
     background: inherit !important;
